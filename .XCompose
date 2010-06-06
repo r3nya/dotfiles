@@ -1,0 +1,90 @@
+include "/usr/share/X11/locale/en_US.UTF-8/Compose"
+
+# write Russian symbols → /usr/share/X11/xkb/symbols/ru 
+
+##########
+# Quotes #
+##########
+
+# «Ёлочки»
+# В английской раскладке это:
+# compose + < + < и compose + > + > соответственно
+<Multi_key> <Cyrillic_be>       : "«"   guillemotleft  
+<Multi_key> <Cyrillic_yu>       : "»"   guillemotright
+
+# „Лапки“
+# В английской раскладке это:
+# compose + , + " и compose + < + " соответственно для „ и “
+<Multi_key> <Cyrillic_BE>       : "„"   U201e
+<Multi_key> <Cyrillic_YU>       : "“"   U201c
+
+#########################
+# Различная типографика #
+#########################
+
+<Multi_key> <space>                                   : " "   nobreakspace 
+<Multi_key> <Cyrillic_ve>                             : "…"   ellipsis
+<Multi_key> <apostrophe> <apostrophe> <apostrophe>    : "́"    U0301      # ударение в английской раскладке
+<Multi_key> <Cyrillic_io>                             : "́"    U0301      # ударение в русской раскладке
+
+##################
+# Товарные знаки #
+##################
+
+<Multi_key> <Cyrillic_es>       : "©"   copyright    
+<Multi_key> <c>                 : "©"   copyright   
+<Multi_key> <Cyrillic_ka>       : "®"   registered 
+<Multi_key> <r>                 : "®"   registered
+<Multi_key> <Cyrillic_ie>       : "™"   U2122    
+<Multi_key> <t> <m>             : "™"   U2122   
+
+##########################
+# Математические символы #
+##########################
+
+# знак ≠ (неравно)    набирается как compose + / + =
+# знак ± (плюс-минус) набирается как compose + + + -
+<Multi_key> <Cyrillic_ef>       : "≈"   approximate  # Приблизительно равно
+
+
+#####################################
+# Удобный набор в русской раскладке # 
+#####################################
+
+<Multi_key> <3> <3>             : "#"   numbersign   
+<Multi_key> <4> <4>             : "$"   dollar      
+<Multi_key> <Cyrillic_ha>       : "["   bracketleft
+<Multi_key> <Cyrillic_hardsign> : "]"   bracketright
+<Multi_key> <Cyrillic_e>        : "'"   
+<Multi_key> <Cyrillic_E>        : "\""
+
+#####################
+# Смайлики и прочее #
+#####################
+
+<Multi_key> <0>                      : "☺" U263A # :)
+<Multi_key> <9>                      : "☹" U2639 # :(
+<Multi_key> <Cyrillic_ze> <1>        : "★" U2605 # закрашенная звезда
+<Multi_key> <Cyrillic_ze> <0>        : "☆" U2606 # незакрашенная звезда
+<Multi_key> <Cyrillic_en>            : "♫" U266B # нотки
+
+#############
+# Стрелочки #
+#############
+
+<Multi_key> <minus> <Right> <Right>             : "→"
+<Multi_key> <minus> <Left> <Left>               : "←"
+<Multi_key> <minus> <Up> <Up>                   : "↑"
+<Multi_key> <minus> <Down> <Down>               : "↓"
+
+<Multi_key> <minus> <Left> <Right>              : "↔"
+<Multi_key> <minus> <Up> <Down>                 : "↕"
+
+<Multi_key> <minus> <slash> <Left> <Left>       : "↚"
+<Multi_key> <minus> <slash> <Right> <Right>     : "↛"
+<Multi_key> <minus> <slash> <Left> <Right>      : "↮"
+
+<Multi_key> <minus> <Left> <Up>                 : "↖"
+<Multi_key> <minus> <Left> <Down>               : "↙"
+<Multi_key> <minus> <Up> <Right>                : "↗"
+<Multi_key> <minus> <Down> <Right>              : "↘"
