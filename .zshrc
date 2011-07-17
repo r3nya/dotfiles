@@ -12,7 +12,7 @@ export EDITOR="vim"
 #export PAGER="vimpager"
 export PAGER="less"
 export PATH="${PATH}:${HOME}/bin"
-export PS1="%{$fg[yellow]%}[%{$fg[green]%}%1~%{$fg[yellow]%}] %# %{$reset_color%}> "
+export PS1="%{$fg[yellow]%}[%{$fg[green]%}%1~%{$fg[yellow]%}]%# %{$reset_color%}"
 
 #-----------------------------
 # Dircolors
